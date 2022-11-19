@@ -1,6 +1,6 @@
 import "./App.css";
 import { Navbar } from "./components/UI/navbar/Navbar";
-import Balls from "./components/UI/balls/Balls";
+import Balls from "./components/background/balls/Balls";
 import Main from "./components/UI/main/Main";
 import Footer from "./components/UI/footer/Footer";
 import Copyright from "./components/UI/footer/Copyright";

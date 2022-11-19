@@ -1,5 +1,5 @@
 import React from "react";
-import NavLink from "../../links/NavLink";
+import NavLink from "../links/NavLink";
 
 export const NavLinks = () => {
   const navLinks = ["Услуги", "Виджеты", "Интеграции", "Кейсы", "Сертификаты"];
