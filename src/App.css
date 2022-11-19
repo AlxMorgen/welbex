@@ -1,38 +1,384 @@
-.App {
+html {
+  background: #1e1e1e;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+p{
+  letter-spacing: 0.7px;
+}
+.container {
+  max-width: 1140px;
+  margin: auto;
+  position: relative;
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 94px;
+}
+
+.color-title {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+
+  line-height: 22px;
+
+  background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%), #e4e5ea;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.light-red {
+  background: radial-gradient(circle farthest-corner, #961a1a, #1e1e1e 40%);
+  border-radius: 150px;
+  position: absolute;
+  width: 111%;
+  height: 77%;
+
+  filter: blur(4px);
+  opacity: 0.25;
+  transform: translate(-50%, 15%);
+}
+
+.light-purple {
+  background: radial-gradient(circle farthest-corner, #833ab4, #1e1e1e 40%);
+  border-radius: 150px;
+  position: absolute;
+  width: 111%;
+  height: 77%;
+
+  filter: blur(4px);
+  opacity: 0.09;
+  transform: translate(0%, -56%);
+}
+
+.purple-ball {
+  background: radial-gradient(
+    64% 64% at 27.25% 26.5%,
+    rgba(236, 208, 255, 0.64) 0%,
+    rgba(161, 93, 207, 0.24) 59.67%,
+    rgba(118, 49, 164, 0.208) 78.59%,
+    rgba(86, 24, 128, 0.232) 100%
+  );
+
+  box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
+  filter: blur(5px);
+
+  width: 60px;
+  height: 60px;
+  margin: 2px 512px 0 868px;
+  border-radius: 50px;
+}
+
+.red-ball {
+  position: absolute;
+  position: absolute;
+  width: 83px;
+  height: 83px;
+  left: 519px;
+  top: 83px;
+
+  background: radial-gradient(
+      64% 64% at 27.25% 26.5%,
+      rgba(255, 208, 208, 0.536) 0%,
+      rgba(212, 93, 93, 0.264) 59.67%,
+      rgba(167, 49, 49, 0.248) 78.59%,
+      rgba(130, 25, 25, 0.248) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+  filter: blur(2px);
+  border-radius: 50px;
+}
+
+.red-ball-small {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  left: 851px;
+  top: 547px;
+
+  background: radial-gradient(
+    64% 64% at 27.25% 26.5%,
+    rgba(255, 208, 208, 0.48) 0%,
+    rgba(212, 93, 93, 0.248) 59.67%,
+    rgba(167, 49, 49, 0.264) 78.59%,
+    rgba(130, 25, 25, 0.232) 100%
+  );
+
+  box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+  filter: blur(2.5px);
+  filter: blur(2px);
+  border-radius: 50px;
+}
+
+.navbar {
+  display: flex;
+}
+
+.nav-logo_disclaimer {
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+  
+  color: #e4e5ea;
+}
+
+
+
+.nav-links {
+  margin-left: 52px;
+}
+
+.nav-links_item {
+  margin-left: 30px;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #e4e5ea;
+}
+
+.nav-links_item:first-child {
+  margin-left: 0;
+}
+
+.contacts {
+  display: flex;
+  margin-left: 137px;
+}
+
+.social-links {
+  display: flex;
+  margin-left: 48.67px;
+  
+}
+
+.social-links_item {
+  margin-left: 33.65px;
+}
+
+.social-links_item:first-child {
+  margin-left: 0;
+}
+
+.phone a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: right;
+
+  color: #e4e5ea;
+}
+
+.more-money_title h1 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+
+  color: #e4e5ea;
+}
+
+.more-money_disclaimer {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 30px;
+  color: #e4e5ea;
+}
+
+.consultation {
+  text-align: end;
+}
+
+.consultation-items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.consultation-title {
+  padding-top: 15px;
+}
+.consultation-title h2 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+
+  color: #e4e5ea;
+}
+
+.consultation-item-block {
+  margin-top: 30px;
+}
+
+.consultation-item-block-title h3 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+
+  text-align: right;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #e4e5ea;
+}
+
+.consultation-item-block-description p {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+
+  color: #e4e5ea;
+}
+
+.get-consultation {
+  background: #4077f3;
+  padding: 21px 34px;
+  margin-top: 61px;
+
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
   text-align: center;
+
+  color: #e4e5ea;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 124px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.footer-title {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #656566;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.footer-link {
+  margin: 5px 0;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #e4e5ea;
+  text-decoration: none;
+}
+
+.footer-nav {
+  margin-left: 0;
+    padding-left: 98px;
+    margin-right: auto;
+}
+
+.footer-nav-items {
+  display: flex;
+}
+
+.footer-nav-block {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.footer-nav-items .footer-nav-block:last-child {
+  margin-left: 52px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer-contacts {
+  text-align: end;
+}
+
+.footer-contacts-title {
+  margin-bottom: 20px;
+}
+
+.footer-contacts .social-links {
+  margin-top: 23px;
+  justify-content: end;
+  
+}
+
+.footer-contacts .social-links_item {
+  margin-left: 14px;
+}
+
+.footer-contacts .social-links_item:first-child {
+  margin-left: 0;
+}
+
+
+.adress {
+  margin-top: 22px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: right;
+
+  color: #e4e5ea;
+}
+
+.copyrights {
+  margin-top: 33px;
+  text-align: end;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+
+  text-align: right;
+
+  color: #e4e5ea;
+}
+.confidencial {
+  color: #e4e5ea;
+  margin-top: 5px;
 }
