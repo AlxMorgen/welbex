@@ -1,9 +1,11 @@
 import "./App.css";
-import { Navbar } from "./components/UI/navbar/Navbar";
+
 import Balls from "./components/background/balls/Balls";
-import Main from "./components/UI/main/Main";
-import Footer from "./components/UI/footer/Footer";
-import Copyright from "./components/UI/footer/Copyright";
+import Main from "./components/layouts/main/Main";
+
+import Copyright from "components/layouts/footer/Copyright";
+import { Navbar } from "components/layouts/navbar/Navbar";
+import Footer from "components/layouts/footer/Footer";
 
 function App() {
   return (

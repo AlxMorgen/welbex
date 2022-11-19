@@ -1,5 +1,5 @@
 import React from "react";
-import GetButton from "../../buttons/GetButton";
+import GetButton from "../../../UI/buttons/GetButton";
 import ConsultationLeft from "./ConsultationLeft";
 import ConsultationRight from "./ConsultationRight";
 

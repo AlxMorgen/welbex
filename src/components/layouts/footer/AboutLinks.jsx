@@ -1,5 +1,5 @@
+import FooterLink from "components/UI/links/FooterLink";
 import React from "react";
-import FooterLink from "../links/FooterLink";
 
 const AboutLinks = (arrLinks) => {
   const navigation = arrLinks.arrLinks.map((elem) => (

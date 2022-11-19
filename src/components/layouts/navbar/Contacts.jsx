@@ -1,14 +1,14 @@
-import React from 'react'
-import PhoneNumber from '../contacts/PhoneNumber'
-import SocialLinks from '../social-links/SocialLinks'
+import PhoneNumber from "components/UI/contacts/PhoneNumber";
+import SocialLinks from "components/UI/social-links/SocialLinks";
+import React from "react";
 
 const Contacts = () => {
   return (
     <div className="contacts">
-        <PhoneNumber/>
-        <SocialLinks/>
-      </div>
-  )
-}
+      <PhoneNumber />
+      <SocialLinks />
+    </div>
+  );
+};
 
-export default Contacts
+export default Contacts;

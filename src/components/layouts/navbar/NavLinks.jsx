@@ -1,5 +1,5 @@
+import NavLink from "components/UI/links/NavLink";
 import React from "react";
-import NavLink from "../links/NavLink";
 
 export const NavLinks = () => {
   const navLinks = ["Услуги", "Виджеты", "Интеграции", "Кейсы", "Сертификаты"];

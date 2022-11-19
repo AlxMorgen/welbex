@@ -1,7 +1,8 @@
+import Adress from "components/UI/contacts/Adress";
+import PhoneNumber from "components/UI/contacts/PhoneNumber";
+import SocialLinks from "components/UI/social-links/SocialLinks";
 import React from "react";
-import Adress from "../contacts/Adress";
-import PhoneNumber from "../contacts/PhoneNumber";
-import SocialLinks from "../social-links/SocialLinks";
+
 import FooterTitle from "./FooterTitle";
 
 const FooterContacts = () => {
