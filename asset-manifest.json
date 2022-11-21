@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/welbex/static/css/main.66e51dfa.css",
+    "main.js": "/welbex/static/js/main.b395d132.js",
+    "index.html": "/welbex/index.html",
+    "main.66e51dfa.css.map": "/welbex/static/css/main.66e51dfa.css.map",
+    "main.b395d132.js.map": "/welbex/static/js/main.b395d132.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.66e51dfa.css",
+    "static/js/main.b395d132.js"
+  ]
+}
